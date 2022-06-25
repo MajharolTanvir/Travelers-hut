@@ -10,7 +10,7 @@ import Login from './Component/LoginRegistration/Login/Login';
 
 function App() {
   return (
-    <div className="bg-gray-900 h-screen">
+    <div className="bg-gray-900 h-full">
     <div className="App">
         <Navbar></Navbar>
         <Routes>
