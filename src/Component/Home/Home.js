@@ -1,16 +1,19 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel'
-import { Paper, Button } from '@mui/material'
+import { Paper } from '@mui/material'
 
 const Home = () => {
     var items = [
         {
+            key: '1',
             url: "https://ttg.com.bd/uploads/tours/hotels/278_003jpg.jpg",
         },
         {
+            key: '2',
             url: "https://i.ytimg.com/vi/YxpAQcq5-y0/maxresdefault.jpg",
         },
         {
+            key: '3',
             url: "https://porzoton.com/wp-content/uploads/2020/03/sixty-dome-mosque_featured-1024x576.jpg",
         }
     ]
@@ -25,7 +28,7 @@ const Home = () => {
                     prev={() => {/* Do other stuff */ }}>
                     {
                         items.map(item =>
-                            <Paper>
+                            <Paper key={item.key}>
                                 <img src={item.url} alt="" />
                             </Paper>
                         )
